@@ -1,0 +1,23 @@
+{
+ "creation": "2026-05-20 00:00:00.000000",
+ "docstatus": 0,
+ "doctype": "Number Card",
+ "document_type": "School Health Incident",
+ "dynamic_filters_json": "[]",
+ "filters_json": "[[\"School Health Incident\",\"follow_up_required\",\"=\",1,false],[\"School Health Incident\",\"status\",\"!=\",\"Resolved\",false]]",
+ "function": "Count",
+ "idx": 0,
+ "is_public": 1,
+ "is_standard": 1,
+ "label": "Open Health Follow-ups",
+ "modified": "2026-05-20 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "SchoolHealth",
+ "name": "Open Health Follow-ups",
+ "owner": "Administrator",
+ "parent_document_type": "",
+ "show_full_number": 0,
+ "show_percentage_stats": 1,
+ "stats_time_interval": "Daily",
+ "type": "Document Type"
+}

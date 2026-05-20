@@ -1,0 +1,194 @@
+{
+ "app": "school_health",
+ "charts": [
+  {
+   "chart_name": "Monthly Health Incidents",
+   "label": "Monthly Health Incidents"
+  },
+  {
+   "chart_name": "Health Incidents by Severity",
+   "label": "Health Incidents by Severity"
+  },
+  {
+   "chart_name": "Health Incidents by Location",
+   "label": "Health Incidents by Location"
+  }
+ ],
+ "content": "[{\"id\":\"school-health-total\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Health Incidents\",\"col\":3}},{\"id\":\"school-health-followups\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Open Health Follow-ups\",\"col\":3}},{\"id\":\"school-health-severity\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"High Severity Incidents\",\"col\":3}},{\"id\":\"school-health-guardians\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Guardians Notified\",\"col\":3}},{\"id\":\"school-health-chart-monthly\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Monthly Health Incidents\",\"col\":12}},{\"id\":\"school-health-chart-severity\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Health Incidents by Severity\",\"col\":6}},{\"id\":\"school-health-chart-location\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Health Incidents by Location\",\"col\":6}},{\"id\":\"school-health-spacer-1\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"school-health-header-care\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Nurse Office</b></span>\",\"col\":12}},{\"id\":\"school-health-card-care\",\"type\":\"card\",\"data\":{\"card_name\":\"Care Records\",\"col\":4}},{\"id\":\"school-health-card-library\",\"type\":\"card\",\"data\":{\"card_name\":\"Health Library\",\"col\":4}},{\"id\":\"school-health-card-reports\",\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":4}}]",
+ "creation": "2026-05-20 00:00:00.000000",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "heart-pulse",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "School Health",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Care Records",
+   "link_count": 0,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Health Incidents",
+   "link_count": 0,
+   "link_to": "School Health Incident",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Student Health Profiles",
+   "link_count": 0,
+   "link_to": "Student Health Profile",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Health Library",
+   "link_count": 0,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Health Symptoms",
+   "link_count": 0,
+   "link_to": "Health Symptom",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Students",
+   "link_count": 0,
+   "link_to": "Student",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Reports",
+   "link_count": 0,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Health Incident Analytics",
+   "link_count": 0,
+   "link_to": "Health Incident Analytics",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Repeat Health Visitors",
+   "link_count": 0,
+   "link_to": "Repeat Health Visitors",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Symptom Trends",
+   "link_count": 0,
+   "link_to": "Symptom Trends",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-05-20 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "SchoolHealth",
+ "name": "School Health",
+ "number_cards": [
+  {
+   "label": "Total Health Incidents",
+   "number_card_name": "Total Health Incidents"
+  },
+  {
+   "label": "Open Health Follow-ups",
+   "number_card_name": "Open Health Follow-ups"
+  },
+  {
+   "label": "High Severity Incidents",
+   "number_card_name": "High Severity Incidents"
+  },
+  {
+   "label": "Guardians Notified",
+   "number_card_name": "Guardians Notified"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "School Nurse"
+  },
+  {
+   "role": "School Health Manager"
+  },
+  {
+   "role": "Education Manager"
+  },
+  {
+   "role": "System Manager"
+  }
+ ],
+ "sequence_id": 8.0,
+ "shortcuts": [
+  {
+   "color": "Red",
+   "doc_view": "List",
+   "format": "{}",
+   "label": "New Incident",
+   "link_to": "School Health Incident",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "format": "{}",
+   "label": "Student Profiles",
+   "link_to": "Student Health Profile",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Blue",
+   "format": "{}",
+   "label": "Incident Analytics",
+   "link_to": "Health Incident Analytics",
+   "stats_filter": "[]",
+   "type": "Report"
+  }
+ ],
+ "title": "School Health"
+}

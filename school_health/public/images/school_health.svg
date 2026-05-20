@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="School Health">
+  <defs>
+    <linearGradient id="bg" x1="18" y1="14" x2="110" y2="116" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22c55e"/>
+      <stop offset="1" stop-color="#0ea5e9"/>
+    </linearGradient>
+    <linearGradient id="book" x1="30" y1="42" x2="98" y2="92" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ecfeff"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="30" fill="url(#bg)"/>
+  <path d="M31 44c0-5 4-9 9-9h19c4 0 7 3 7 7v48c0-4-3-7-7-7H40c-5 0-9 4-9 9V44z" fill="url(#book)" opacity=".96"/>
+  <path d="M97 44c0-5-4-9-9-9H69c-4 0-7 3-7 7v48c0-4 3-7 7-7h19c5 0 9 4 9 9V44z" fill="#dffdf4" opacity=".96"/>
+  <path d="M64 43v49" stroke="#0f766e" stroke-width="4" stroke-linecap="round" opacity=".45"/>
+  <path d="M46 61h36" stroke="#0f172a" stroke-width="9" stroke-linecap="round" opacity=".12"/>
+  <path d="M64 46v34M47 63h34" stroke="#0f766e" stroke-width="10" stroke-linecap="round"/>
+  <path d="M64 46v34M47 63h34" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+  <path d="M39 95c7-6 18-6 25 0 7-6 18-6 25 0" fill="none" stroke="#064e3b" stroke-width="5" stroke-linecap="round" opacity=".55"/>
+</svg>

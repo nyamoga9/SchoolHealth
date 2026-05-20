@@ -1,0 +1,14 @@
+[build-system]
+requires = ["flit_core >=3.4,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "school_health"
+authors = [{name = "Unitech Consulting", email = ""}]
+description = "School nurse health incident tracking, dashboards, and reports for Frappe/ERPNext."
+readme = "README.md"
+dynamic = ["version"]
+dependencies = []
+
+[tool.flit.module]
+name = "school_health"

@@ -1,0 +1,15 @@
+include LICENSE
+include README.md
+include requirements.txt
+recursive-include school_health *.css
+recursive-include school_health *.csv
+recursive-include school_health *.html
+recursive-include school_health *.ico
+recursive-include school_health *.js
+recursive-include school_health *.json
+recursive-include school_health *.md
+recursive-include school_health *.png
+recursive-include school_health *.py
+recursive-include school_health *.svg
+recursive-include school_health *.txt
+recursive-exclude school_health *.pyc
