@@ -4,7 +4,7 @@ from frappe import _
 def get_data():
     return [
         {
-            "module_name": "SchoolHealth",
+            "module_name": "School Health",
             "type": "module",
             "label": _("School Health"),
             "color": "#0f766e",

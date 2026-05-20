@@ -1,6 +1,6 @@
-# SchoolHealth
+# School Health
 
-SchoolHealth is a Frappe/ERPNext app for school nurse offices. It helps nurses
+School Health is a Frappe/ERPNext app for school nurse offices. It helps nurses
 record student health incidents, symptoms, care given, guardian communication,
 follow-ups, and simple health trends.
 
