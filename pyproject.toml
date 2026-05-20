@@ -4,7 +4,7 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name = "school_health"
-authors = [{name = "Unitech Consulting", email = ""}]
+authors = [{name = "Unitech Consulting"}]
 description = "School nurse health incident tracking, dashboards, and reports for Frappe/ERPNext."
 readme = "README.md"
 dynamic = ["version"]
