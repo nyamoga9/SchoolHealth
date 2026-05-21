@@ -2,6 +2,8 @@ import frappe
 from frappe import _
 from frappe.utils import add_months, getdate, nowdate
 
+from school_health.school_health.utils import get_student_names
+
 
 def execute(filters=None):
     filters = frappe._dict(filters or {})
@@ -33,6 +35,9 @@ def execute(filters=None):
         ],
         order_by="incident_datetime desc",
     )
+    student_names = get_student_names([row.student for row in data])
+    for row in data:
+        row.student_name = (row.student_name or "").strip() or student_names.get(row.student) or row.student
 
     columns = [
         {"fieldname": "name", "label": _("Incident"), "fieldtype": "Link", "options": "School Health Incident", "width": 160},

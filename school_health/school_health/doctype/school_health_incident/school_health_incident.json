@@ -65,7 +65,6 @@
   {
    "fieldname": "student",
    "fieldtype": "Link",
-   "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Student",
    "options": "Student"
@@ -309,6 +308,6 @@
  "sort_field": "incident_datetime",
  "sort_order": "DESC",
  "states": [],
- "title_field": "student_name",
+ "title_field": "",
  "track_changes": 1
 }

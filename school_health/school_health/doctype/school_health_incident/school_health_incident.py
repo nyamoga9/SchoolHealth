@@ -3,10 +3,13 @@ from frappe import _
 from frappe.model.document import Document
 from frappe.utils import getdate, now_datetime
 
+from school_health.school_health.utils import get_student_name
+
 
 class SchoolHealthIncident(Document):
     def validate(self):
         self.set_defaults()
+        self.set_student_name()
         self.validate_scores()
 
     def set_defaults(self):
@@ -20,6 +23,9 @@ class SchoolHealthIncident(Document):
             self.status = "Follow Up"
         if self.resolved_on:
             self.status = "Resolved"
+
+    def set_student_name(self):
+        self.student_name = get_student_name(self.student) if self.student else ""
 
     def validate_scores(self):
         if self.pain_score is not None and self.pain_score != "":

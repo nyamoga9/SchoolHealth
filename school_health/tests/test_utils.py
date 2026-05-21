@@ -2,6 +2,7 @@ import unittest
 from datetime import date, timedelta
 
 from school_health.school_health.utils import (
+    full_name_from_parts,
     normalize_severity,
     status_for_legacy_incident,
     symptom_name_from_legacy,
@@ -22,6 +23,9 @@ class TestSchoolHealthUtils(unittest.TestCase):
     def test_symptom_name_from_legacy(self):
         self.assertEqual(symptom_name_from_legacy("Fever - General Symptoms"), "Fever")
         self.assertEqual(symptom_name_from_legacy("Nose bleed"), "Nose bleed")
+
+    def test_full_name_from_parts_ignores_blank_parts(self):
+        self.assertEqual(full_name_from_parts(" Nania ", None, "Mashami"), "Nania Mashami")
 
 
 if __name__ == "__main__":

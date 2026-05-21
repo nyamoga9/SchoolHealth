@@ -56,3 +56,32 @@ def symptom_name_from_legacy(value: str | None) -> str:
     if " - " in symptom:
         return symptom.rsplit(" - ", 1)[0].strip()
     return symptom
+
+
+def full_name_from_parts(*parts: str | None) -> str:
+    return " ".join(part.strip() for part in parts if part and part.strip())
+
+
+def get_student_names(students: list[str] | tuple[str, ...] | set[str]) -> dict[str, str]:
+    student_ids = sorted({student for student in students if student})
+    if not student_ids:
+        return {}
+
+    import frappe
+
+    rows = frappe.get_all(
+        "Student",
+        filters={"name": ("in", student_ids)},
+        fields=["name", "student_name", "first_name", "middle_name", "last_name"],
+    )
+    names = {}
+    for row in rows:
+        student_name = (row.student_name or "").strip()
+        names[row.name] = student_name or full_name_from_parts(row.first_name, row.middle_name, row.last_name)
+    return names
+
+
+def get_student_name(student: str | None) -> str:
+    if not student:
+        return ""
+    return get_student_names([student]).get(student, "")

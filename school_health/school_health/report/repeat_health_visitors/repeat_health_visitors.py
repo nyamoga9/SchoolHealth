@@ -2,6 +2,8 @@ import frappe
 from frappe import _
 from frappe.utils import add_months, getdate, nowdate
 
+from school_health.school_health.utils import get_student_names
+
 
 def execute(filters=None):
     filters = frappe._dict(filters or {})
@@ -28,6 +30,9 @@ def execute(filters=None):
         (from_date, to_date, min_visits),
         as_dict=True,
     )
+    student_names = get_student_names([row.student for row in data])
+    for row in data:
+        row.student_name = (row.student_name or "").strip() or student_names.get(row.student) or row.student
 
     columns = [
         {"fieldname": "student", "label": _("Student"), "fieldtype": "Link", "options": "Student", "width": 130},

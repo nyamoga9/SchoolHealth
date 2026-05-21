@@ -3,6 +3,7 @@ import frappe
 from school_health.school_health.utils import (
     SYMPTOM_CATEGORIES,
     normalize_severity,
+    get_student_name,
     status_for_legacy_incident,
     symptom_name_from_legacy,
 )
@@ -140,6 +141,7 @@ def import_legacy_incidents():
                 "naming_series": "SHI-.YYYY.-.#####",
                 "legacy_health_incident": legacy.name,
                 "student": legacy.studentname,
+                "student_name": get_student_name(legacy.studentname),
                 "incident_datetime": legacy.dateandtime,
                 "location": clean_text(legacy.incidencelocation),
                 "reported_by": legacy.reportedby,
@@ -216,6 +218,7 @@ def ensure_student_profile(student):
         {
             "doctype": "Student Health Profile",
             "student": student,
+            "student_name": get_student_name(student),
             "status": "Active",
         }
     )
